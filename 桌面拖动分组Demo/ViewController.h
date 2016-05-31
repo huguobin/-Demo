@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class MycollectionView;
 @interface ViewController : UIViewController
 
-
+@property(nonatomic,retain)  MycollectionView *  collectionView;
 @end
 

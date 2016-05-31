@@ -14,6 +14,9 @@
 		1DA4E4F11CFC189600FFD155 /* ______Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4E4EF1CFC189600FFD155 /* ______Demo.xcdatamodeld */; };
 		1DA4E4F31CFC189600FFD155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA4E4F21CFC189600FFD155 /* Assets.xcassets */; };
 		1DA4E4F61CFC189600FFD155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA4E4F41CFC189600FFD155 /* LaunchScreen.storyboard */; };
+		1DA4E5021CFC1C3700FFD155 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4E5001CFC1C3700FFD155 /* CollectionViewCell.m */; };
+		1DA4E5031CFC1C3700FFD155 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA4E5011CFC1C3700FFD155 /* CollectionViewCell.xib */; };
+		1DA4E5061CFC2C3000FFD155 /* MycollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4E5051CFC2C3000FFD155 /* MycollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,11 @@
 		1DA4E4F21CFC189600FFD155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA4E4F51CFC189600FFD155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA4E4F71CFC189600FFD155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA4E4FF1CFC1C3700FFD155 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		1DA4E5001CFC1C3700FFD155 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		1DA4E5011CFC1C3700FFD155 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		1DA4E5041CFC2C3000FFD155 /* MycollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MycollectionView.h; sourceTree = "<group>"; };
+		1DA4E5051CFC2C3000FFD155 /* MycollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MycollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,11 @@
 				1DA4E4E71CFC189600FFD155 /* AppDelegate.m */,
 				1DA4E4E91CFC189600FFD155 /* ViewController.h */,
 				1DA4E4EA1CFC189600FFD155 /* ViewController.m */,
+				1DA4E5041CFC2C3000FFD155 /* MycollectionView.h */,
+				1DA4E5051CFC2C3000FFD155 /* MycollectionView.m */,
+				1DA4E4FF1CFC1C3700FFD155 /* CollectionViewCell.h */,
+				1DA4E5001CFC1C3700FFD155 /* CollectionViewCell.m */,
+				1DA4E5011CFC1C3700FFD155 /* CollectionViewCell.xib */,
 				1DA4E4EC1CFC189600FFD155 /* Main.storyboard */,
 				1DA4E4F21CFC189600FFD155 /* Assets.xcassets */,
 				1DA4E4F41CFC189600FFD155 /* LaunchScreen.storyboard */,
@@ -113,6 +126,7 @@
 				TargetAttributes = {
 					1DA4E4DF1CFC189600FFD155 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B4B75G9X7L;
 					};
 				};
 			};
@@ -141,6 +155,7 @@
 			files = (
 				1DA4E4F61CFC189600FFD155 /* LaunchScreen.storyboard in Resources */,
 				1DA4E4F31CFC189600FFD155 /* Assets.xcassets in Resources */,
+				1DA4E5031CFC1C3700FFD155 /* CollectionViewCell.xib in Resources */,
 				1DA4E4EE1CFC189600FFD155 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,8 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA4E4EB1CFC189600FFD155 /* ViewController.m in Sources */,
+				1DA4E5021CFC1C3700FFD155 /* CollectionViewCell.m in Sources */,
 				1DA4E4E81CFC189600FFD155 /* AppDelegate.m in Sources */,
 				1DA4E4F11CFC189600FFD155 /* ______Demo.xcdatamodeld in Sources */,
+				1DA4E5061CFC2C3000FFD155 /* MycollectionView.m in Sources */,
 				1DA4E4E51CFC189600FFD155 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 国彬 胡 (27B479RXM9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "桌面拖动分组Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "readingjoy.com.------Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -278,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 国彬 胡 (27B479RXM9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "桌面拖动分组Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "readingjoy.com.------Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
